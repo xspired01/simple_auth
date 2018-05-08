@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+<div class="container">
+    <div class="row">    
+        <h1>Dashboard</h1>
+        <p>Welcome to your dashboard <strong><%= user.firstName %></strong>. You are now logged in.</p>
+        <div>
+            <p><%= user.firstName %> your user information is below:</p>
+            <ul>
+                <li><%= user.firstName + ' ' + user.lastName%></li>
+                <li><%= user.email %></li>
+                <li><%= user.password %></li>
+            </ul>
+        </div>
+        <a href="/logout" class="btn btn-primary btn-large">Sign Out</a>
+    </div>
+</div>
+<% include ./partials/footer %>
